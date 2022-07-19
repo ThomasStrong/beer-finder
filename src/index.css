@@ -15,7 +15,6 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: antiquewhite;
-  /* background-image: url('img/whiteweb.webp'); */
 }
 
 .container {
@@ -27,8 +26,6 @@ body {
   padding: 30px;
   border-radius: 5px;
   background: var(--secondary-bg-color);
-  /* background: mediumblue url('img/abstractback.webp'); */
-  /* background-position: 30% 50%; */
 }
 
 .header {
@@ -68,6 +65,37 @@ body {
 .btn-block {
   display: block;
   width: 100%;
+}
+
+#termInput {
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#termBox,
+#searchType {
+  font-size: 15px;
+  padding: 0.5em;
+  text-align: center;
+}
+
+#termBox:focus {
+  outline: none;
+  border-bottom: 3px solid var(--accessory-color);
+}
+
+#locateBtn {
+  align-self: center;
+  margin: 2em 0 3em 0;
+}
+
+#map {
+  align-self: center;
+  height: 100%;
 }
 
 /* .task {
