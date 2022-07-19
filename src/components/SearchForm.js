@@ -13,7 +13,6 @@ const SearchForm = () => {
         name='termBox'
         id='termBox'
         placeholder='Search Term(s)'
-        required
       />
     </div>
   );

@@ -1,14 +1,14 @@
-import Header from './Header';
+import { fetchVenues } from './fetchVenues';
 
-const Venue = ({ testVenue }) => {
+const Venue = ({ topVenue }) => {
   return (
-    <div className='venue'>
-      <h2 key={testVenue.id}>{testVenue.name}</h2>
-      <p>{testVenue.address}</p>
+    <div id='protoVenue' className='protoVenue'>
+      <h2 key={topVenue.id}>{fetchVenues.topVenue.name}</h2>
+      {/* <p>{testVenue.address}</p>
       <p>
         {testVenue.city}, {testVenue.state} {testVenue.zipcode}
       </p>
-      <p>{testVenue.phone}</p>
+      <p>{testVenue.phone}</p> */}
     </div>
   );
 };

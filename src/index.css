@@ -98,14 +98,14 @@ body {
   height: 100%;
 }
 
-.venue {
+.protoVenue {
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
 }
 
-.venue h2 {
+.protoVenue h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
