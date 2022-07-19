@@ -4,7 +4,7 @@ import SearchBtn from './SearchBtn';
 import UseLocation from './UseLocation';
 
 const Header = () => {
-  const termSearch = () => {
+  const onClick = () => {
     console.log('Click');
   };
   const geolocate = () => {
@@ -14,9 +14,9 @@ const Header = () => {
   return (
     <header className='header'>
       <h1>FindMeABeer</h1>
-      <LocateBtn onclick={geolocate} />
+      <LocateBtn onClick={geolocate} />
       <SearchForm />
-      <SearchBtn onClick={termSearch} />
+      <SearchBtn onClick={onClick} />
       <UseLocation />
     </header>
   );

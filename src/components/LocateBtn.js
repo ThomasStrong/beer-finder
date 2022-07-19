@@ -1,9 +1,9 @@
 import UseLocation from './UseLocation';
 
-const LocateBtn = ({ geolocate }) => {
+const LocateBtn = ({ onClick }) => {
   return (
     <div id='locateBtn'>
-      <button onClick={geolocate} className='btn'>
+      <button onClick={onClick} className='btn'>
         Use My Location
       </button>
     </div>

@@ -1,6 +1,6 @@
-const SearchBtn = ({ termSearch }) => {
+const SearchBtn = ({ onClick }) => {
   return (
-    <button onClick={termSearch} className='btn'>
+    <button onClick={onClick} className='btn'>
       Find Me a Beer!
     </button>
   );
