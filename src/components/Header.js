@@ -1,20 +1,16 @@
-import Button from './Button';
+import SearchBtn from './SearchBtn';
 
-const Header = ({ title }) => {
-  const onClick = () => {
+const Header = () => {
+  const termSearch = () => {
     console.log('Click');
   };
 
   return (
     <header className='header'>
-      <h1>{title}</h1>
-      <Button onClick={onClick} />
+      <h1>FindMeABeer</h1>
+      <Button onClick={termSearch} />
     </header>
   );
-};
-
-Header.defaultProps = {
-  title: 'FindMeABeer',
 };
 
 export default Header;
