@@ -1,7 +1,9 @@
+import Header from './Header';
+
 const Venue = ({ testVenue }) => {
   return (
     <div className='venue'>
-      <h2>{testVenue.name}</h2>
+      <h2 key={testVenue.id}>{testVenue.name}</h2>
       <p>{testVenue.address}</p>
       <p>
         {testVenue.city}, {testVenue.state} {testVenue.zipcode}
