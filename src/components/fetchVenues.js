@@ -1,4 +1,5 @@
 let topVenues;
+
 export const fetchVenues = async () => {
   const searchType = document.getElementById('searchType');
   const searchTerm = document.getElementById('termBox').value;
@@ -15,8 +16,8 @@ export const fetchVenues = async () => {
 
     // reduce response array (5,10)
     topVenues = venueData.slice(0, 5);
+    console.log(topVenues);
     return topVenues;
-    // console.log(topVenues);
 
     // appendchildren to .venue
   } else {

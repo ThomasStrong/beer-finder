@@ -54,6 +54,8 @@ const Venues = () => {
         ))}
       </>
     );
+  } else {
+    console.log('No topvenues');
   }
 };
 
