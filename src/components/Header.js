@@ -1,3 +1,4 @@
+import SearchForm from './SearchForm';
 import SearchBtn from './SearchBtn';
 
 const Header = () => {
@@ -8,7 +9,8 @@ const Header = () => {
   return (
     <header className='header'>
       <h1>FindMeABeer</h1>
-      <Button onClick={termSearch} />
+      <SearchForm />
+      <SearchBtn onClick={termSearch} />
     </header>
   );
 };
