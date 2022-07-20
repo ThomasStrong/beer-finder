@@ -1,6 +1,6 @@
 let topVenues;
 
-export const fetchVenues = async () => {
+const fetchVenues = async () => {
   const searchType = document.getElementById('searchType');
   const searchTerm = document.getElementById('termBox').value;
   const encoder = searchType.value;

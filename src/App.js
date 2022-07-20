@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Venues from './components/Venues';
+import SearchForm from './components/SearchForm';
 
 function App() {
   const [venues, setVenues] = useState(
@@ -39,7 +40,8 @@ function App() {
   return (
     <div className='container'>
       <Header />
-      <Venues venues={venues} />
+      <SearchForm />
+      {venues.length > 0 ? <Venues venues={venues} /> : 'No Venues to Show'}
     </div>
   );
 }
