@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Venues from './components/Venues';
 import SearchForm from './components/SearchForm';
-import topVenues from './components/fetchVenues';
 
 function App() {
   const [venues, setVenues] = useState(
@@ -53,27 +52,35 @@ function App() {
 
     fetchURL = `https://beermapping.com/webservice/loc${venue.type}/fdcfda52f27a87308dfd30e9647f4905/${venue.term}&s=json`;
     console.log(fetchURL);
-    return fetchURL;
-  };
 
-  const fetchVenues = async () => {
-    console.log('fetching venues');
-    console.log(fetchURL);
-    const res = await fetch(fetchURL);
+    const fetchVenues = async () => {
+      console.log('fetching venues');
+      console.log(fetchURL);
+      const res = await fetch(fetchURL);
 
-    venueData = await res.json();
-    topVenues = venueData.slice(0, 5);
-    console.log(topVenues);
-    return venueData;
-  };
+      venueData = await res.json();
+      setTopVenues(venueData.slice(0, 5));
+      console.log(topVenues);
+      return venueData;
+    };
+    fetchVenues();
 
-  useEffect(() => {
     const getVenues = async () => {
       const fetcher = await fetchVenues();
       setTopVenues(fetcher);
     };
     getVenues();
-  }, []);
+
+    // return fetchURL;
+  };
+
+  // useEffect(() => {
+  //   const getVenues = async () => {
+  //     const fetcher = await fetchVenues();
+  //     setTopVenues(fetcher);
+  //   };
+  //   getVenues();
+  // }, []);
 
   return (
     <div className='container'>
