@@ -1,11 +1,25 @@
 import { useState } from 'react';
 
-const SearchForm = () => {
+const SearchForm = ({ onSearch }) => {
   const [type, setType] = useState('city');
   const [term, setTerm] = useState('');
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    if (!term) {
+      alert('Please add a search term');
+      return;
+    }
+
+    onSearch({ type, term });
+
+    setTerm('');
+    setType('city');
+  };
+
   return (
-    <form id='termInput'>
+    <form id='termInput' onSubmit={onSubmit}>
       <label htmlFor='searchType'>Search for a location</label>
       <select
         id='searchType'
