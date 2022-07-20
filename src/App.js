@@ -59,19 +59,13 @@ function App() {
       const res = await fetch(fetchURL);
 
       venueData = await res.json();
+
+      console.log(venueData.slice(0, 5));
       setTopVenues(venueData.slice(0, 5));
-      console.log(topVenues);
+
       return venueData;
     };
     fetchVenues();
-
-    const getVenues = async () => {
-      const fetcher = await fetchVenues();
-      setTopVenues(fetcher);
-    };
-    getVenues();
-
-    // return fetchURL;
   };
 
   // useEffect(() => {
@@ -86,7 +80,11 @@ function App() {
     <div className='container'>
       <Header />
       <SearchForm onSearch={getVenueURL} />
-      {venues.length > 0 ? <Venues venues={venues} /> : 'No Venues to Show'}
+      {topVenues.length > 0 ? (
+        <Venues venues={topVenues} />
+      ) : (
+        'No Venues to Show'
+      )}
     </div>
   );
 }
