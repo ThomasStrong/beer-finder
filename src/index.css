@@ -106,10 +106,6 @@ body {
   color: var(--accessory-color);
 }
 
-#venueLink:active {
-  transform: scale(0.9);
-}
-
 #map {
   align-self: center;
   height: 100%;
