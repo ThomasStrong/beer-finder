@@ -3,6 +3,7 @@ import { useState } from 'react';
 const SearchForm = ({ onSearch }) => {
   const [type, setType] = useState('city');
   const [term, setTerm] = useState('');
+  const [displayNumber, setDisplayNumber] = useState(5);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -40,6 +41,18 @@ const SearchForm = ({ onSearch }) => {
         onChange={(e) => setTerm(e.target.value)}
         placeholder='Search Term(s)'
       />
+      <label htmlFor='displayNumber'>How many results would you like?</label>
+      <select
+        id='displayNumber'
+        name='displayNumber'
+        value={displayNumber}
+        onChange={(e) => setDisplayNumber(e.target.value)}
+      >
+        <option value='5'>5</option>
+        <option value='10'>10</option>
+        <option value='25'>25</option>
+        <option value='50'>50</option>
+      </select>
       <input type='submit' value='Find Me A Beer!' className='btn' />
     </form>
   );

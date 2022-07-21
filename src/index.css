@@ -77,7 +77,8 @@ body {
 }
 
 #termBox,
-#searchType {
+#searchType,
+#displayNumber {
   font-size: 15px;
   padding: 0.5em;
   text-align: center;

@@ -10,7 +10,7 @@ function App() {
   let venueData;
 
   const getVenueURL = (venue) => {
-    // console.log(venue.type, venue.term);
+    console.log(venue.type, venue.term, venue.displayNumber);
 
     fetchURL = `https://beermapping.com/webservice/loc${venue.type}/fdcfda52f27a87308dfd30e9647f4905/${venue.term}&s=json`;
     // console.log(fetchURL);
@@ -41,11 +41,7 @@ function App() {
     <div className='container'>
       <Header />
       <SearchForm onSearch={getVenueURL} />
-      {topVenues.length > 0 ? (
-        <Venues venues={topVenues} />
-      ) : (
-        'No Venues to Show'
-      )}
+      {topVenues.length > 0 ? <Venues venues={topVenues} /> : ''}
     </div>
   );
 }
