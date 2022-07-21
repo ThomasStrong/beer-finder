@@ -9,7 +9,7 @@ const Venue = ({ venue }) => {
         {venue.city}, {venue.state} {venue.zip}
       </p>
       <p>{venue.phone}</p>
-      <a href='#' target='_blank'>
+      <a href={`http://${venue.url}`} target='_blank'>
         {venue.url}
       </a>
       {/* <iframe src={venue.proxylink}></iframe>    this is not quite right*/}

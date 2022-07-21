@@ -5,6 +5,7 @@ const Header = () => {
   // const onClick = () => {
   //   console.log('Click');
   // };
+
   const geolocate = () => {
     console.log('Getting Location');
   };
