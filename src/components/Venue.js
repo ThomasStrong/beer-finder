@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 const Venue = ({ venue }) => {
   return (
     <div id='protoVenue' className='protoVenue'>
