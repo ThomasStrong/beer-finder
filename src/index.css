@@ -3,7 +3,8 @@
 :root {
   --main-bg-color: #2c5ceb;
   --secondary-bg-color: rgba(235, 187, 44);
-  --accessory-color: rgba(235, 44, 187, 0.5);
+  --accessory-color: #eb2c5c;
+  --accessory-color-2: rgba(235, 44, 187, 0.5);
 }
 
 * {
@@ -22,7 +23,6 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  /* border: 1px solid var(--accessory-color); */
   padding: 30px;
   border-radius: 5px;
   background: var(--secondary-bg-color);
@@ -92,6 +92,22 @@ body {
 #locateBtn {
   align-self: center;
   margin: 1em 0 1em 0;
+}
+
+#venueLink:link {
+  color: black;
+}
+
+#venueLink:visited {
+  color: black;
+}
+
+#venueLink:hover {
+  color: var(--accessory-color);
+}
+
+#venueLink:active {
+  transform: scale(0.9);
 }
 
 #map {

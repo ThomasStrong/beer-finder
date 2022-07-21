@@ -1,6 +1,6 @@
 const Venue = ({ venue }) => {
   return (
-    <div id='protoVenue' className='protoVenue' href={`http://${venue.url}`}>
+    <div id='protoVenue' className='protoVenue'>
       <h2 key={venue.id}>{venue.name}</h2>
       <p>{venue.street}</p>
       <p>

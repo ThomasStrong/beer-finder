@@ -10,7 +10,9 @@ function App() {
   let venueData;
 
   const getVenueURL = (venue) => {
-    // console.log(venue.type, venue.term, venue.displayNumber);  displaynumber not working
+    // console.log(venue.type, venue.term);
+
+    const displayNumber = document.querySelector('#displayNumber').value;
 
     fetchURL = `https://beermapping.com/webservice/loc${venue.type}/fdcfda52f27a87308dfd30e9647f4905/${venue.term}&s=json`;
     // console.log(fetchURL);
@@ -22,20 +24,12 @@ function App() {
 
       venueData = await res.json();
 
-      setTopVenues(venueData.slice(0, 10));
+      setTopVenues(venueData.slice(0, displayNumber));
 
       return venueData;
     };
     fetchVenues();
   };
-
-  // useEffect(() => {
-  //   const getVenues = async () => {
-  //     const fetcher = await fetchVenues();
-  //     setTopVenues(fetcher);
-  //   };
-  //   getVenues();
-  // }, []);
 
   return (
     <div className='container'>
