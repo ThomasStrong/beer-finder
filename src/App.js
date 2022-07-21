@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
 import Venues from './components/Venues';
 import SearchForm from './components/SearchForm';
@@ -10,7 +10,7 @@ function App() {
   let venueData;
 
   const getVenueURL = (venue) => {
-    console.log(venue.type, venue.term, venue.displayNumber);
+    // console.log(venue.type, venue.term, venue.displayNumber);  displaynumber not working
 
     fetchURL = `https://beermapping.com/webservice/loc${venue.type}/fdcfda52f27a87308dfd30e9647f4905/${venue.term}&s=json`;
     // console.log(fetchURL);
@@ -22,7 +22,7 @@ function App() {
 
       venueData = await res.json();
 
-      setTopVenues(venueData.slice(0, 5));
+      setTopVenues(venueData.slice(0, 10));
 
       return venueData;
     };
