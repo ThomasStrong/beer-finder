@@ -2,8 +2,8 @@
 
 :root {
   --main-bg-color: #2c5ceb;
-  --secondary-bg-color: #ebbb2c;
-  --accessory-color: #eb2cbb;
+  --secondary-bg-color: rgba(235, 187, 44);
+  --accessory-color: rgba(235, 44, 187, 0.5);
 }
 
 * {
@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: antiquewhite;
+  background: var(--secondary-bg-color);
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid var(--accessory-color);
+  /* border: 1px solid var(--accessory-color); */
   padding: 30px;
   border-radius: 5px;
   background: var(--secondary-bg-color);
@@ -30,13 +30,13 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   background: var(--main-bg-color);
   margin-bottom: 20px;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .btn {
@@ -62,10 +62,10 @@ body {
   transform: scale(0.98);
 }
 
-.btn-block {
+/* .btn-block {
   display: block;
   width: 100%;
-}
+} */
 
 #termInput {
   min-height: 125px;
@@ -91,7 +91,7 @@ body {
 
 #locateBtn {
   align-self: center;
-  margin: 2em 0 3em 0;
+  margin: 1em 0 1em 0;
 }
 
 #map {
@@ -100,10 +100,12 @@ body {
 }
 
 .protoVenue {
-  background: #f4f4f4;
+  background: var(--secondary-bg-color);
+  border: 1em solid rgba(120, 120, 120, 0.5);
+  border-style: outset;
+  border-radius: 0.1em;
   margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+  padding: 2em 3em;
 }
 
 .protoVenue h2 {
@@ -116,3 +118,5 @@ footer {
   margin-top: 30px;
   text-align: center;
 }
+
+/* media query for large screenurl('./beermugs.png') */
