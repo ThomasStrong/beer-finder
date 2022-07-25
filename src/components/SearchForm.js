@@ -30,7 +30,6 @@ const SearchForm = ({ onSearch }) => {
       document.getElementById('termInput').appendChild(node);
     } else {
       onSearch({ type, term });
-      document.querySelector('#termInput p:last-child').innerHTML = '';
     }
     setTerm('');
     setType('city');
