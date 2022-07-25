@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/beer-finder/static/css/main.bd48cb2b.css",
+    "main.js": "/beer-finder/static/js/main.a9f56812.js",
+    "static/js/787.802d6bcd.chunk.js": "/beer-finder/static/js/787.802d6bcd.chunk.js",
+    "static/media/timothy-dykes-Lq1rOaigDoY-unsplash.jpg": "/beer-finder/static/media/timothy-dykes-Lq1rOaigDoY-unsplash.e3dc4e6c9ca46fb33aa4.jpg",
+    "index.html": "/beer-finder/index.html",
+    "main.bd48cb2b.css.map": "/beer-finder/static/css/main.bd48cb2b.css.map",
+    "main.a9f56812.js.map": "/beer-finder/static/js/main.a9f56812.js.map",
+    "787.802d6bcd.chunk.js.map": "/beer-finder/static/js/787.802d6bcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd48cb2b.css",
+    "static/js/main.a9f56812.js"
+  ]
+}
