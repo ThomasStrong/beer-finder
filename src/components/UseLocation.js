@@ -1,4 +1,4 @@
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '300px',
@@ -14,8 +14,7 @@ function UseLocation() {
   return (
     <LoadScript googleMapsApiKey='AIzaSyC991AHKUTrVnFqaVAFcox4BMl8dI0fjzA'>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-        {/* Child components, such as markers, info windows, etc. */}
-        <></>
+        <Marker position={center} />
       </GoogleMap>
     </LoadScript>
   );
