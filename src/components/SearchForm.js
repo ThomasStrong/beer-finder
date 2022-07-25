@@ -22,8 +22,16 @@ const SearchForm = ({ onSearch }) => {
     //   para.remove();
     // }
 
-    onSearch({ type, term });
+    const node = document.createElement('p');
+    const noTerm = document.createTextNode('Please enter a search term!');
 
+    if (!term) {
+      node.appendChild(noTerm);
+      document.getElementById('termInput').appendChild(node);
+    } else {
+      onSearch({ type, term });
+      document.querySelector('#termInput p:last-child').innerHTML = '';
+    }
     setTerm('');
     setType('city');
   };
