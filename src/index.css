@@ -74,8 +74,9 @@ body {
 }
 
 #termInput label {
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  font-weight: 600;
+  color: #000;
+  border-bottom: 2px solid #000;
 }
 
 #termBox,
