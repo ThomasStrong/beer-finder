@@ -15,7 +15,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--secondary-bg-color);
+  background-color: var(--secondary-bg-color);
+  background-attachment: fixed;
+  background-position: 50% 70%;
+  background-image: url('./timothy-dykes-Lq1rOaigDoY-unsplash.jpg');
 }
 
 .container {
@@ -25,7 +28,6 @@ body {
   min-height: 300px;
   padding: 30px;
   border-radius: 5px;
-  background: var(--secondary-bg-color);
 }
 
 .header {
@@ -62,11 +64,6 @@ body {
   transform: scale(0.98);
 }
 
-/* .btn-block {
-  display: block;
-  width: 100%;
-} */
-
 #termInput {
   min-height: 125px;
   display: flex;
@@ -76,12 +73,24 @@ body {
   margin-bottom: 10px;
 }
 
+#termInput label {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
 #termBox,
 #searchType,
 #displayNumber {
   font-size: 15px;
   padding: 0.5em;
   text-align: center;
+}
+
+#termBox,
+#searchType,
+#displayNumberLabel,
+#termInputLabel {
+  margin-bottom: 0.5em;
 }
 
 #termBox:focus {
@@ -131,4 +140,40 @@ footer {
   text-align: center;
 }
 
-/* media query for large screenurl('./beermugs.png') */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 110%;
+    background-attachment: fixed;
+    background-position: 50% 70%;
+    background-image: url('./timothy-dykes-Lq1rOaigDoY-unsplash.jpg');
+  }
+
+  .container {
+    max-width: 70%;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #termInput {
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 1980px) {
+  .container {
+    max-width: 1100px;
+    display: block;
+    display: flex;
+  }
+
+  #termInput {
+    float: left;
+  }
+}

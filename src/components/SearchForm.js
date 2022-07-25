@@ -30,7 +30,9 @@ const SearchForm = ({ onSearch }) => {
 
   return (
     <form id='termInput' onSubmit={onSubmit}>
-      <label htmlFor='searchType'>Search for a location</label>
+      <label id='termInputLabel' htmlFor='searchType'>
+        Search for a location
+      </label>
       <select
         id='searchType'
         name='searchType'
@@ -40,7 +42,6 @@ const SearchForm = ({ onSearch }) => {
         <option value='city'>Search by City</option>
         <option value='state'>Search by State</option>
         <option value='query'>Search by Name</option>
-        {/* <option value='postal-code'>Search by Zip/Postal Code</option> */}
       </select>
       <input
         type='text'
@@ -50,7 +51,9 @@ const SearchForm = ({ onSearch }) => {
         onChange={(e) => setTerm(e.target.value)}
         placeholder='Search Term(s)'
       />
-      <label htmlFor='displayNumber'>How many results would you like?</label>
+      <label id='displayNumberLabel' htmlFor='displayNumber'>
+        How many results would you like?
+      </label>
       <select id='displayNumber' name='displayNumber'>
         <option value='5'>5</option>
         <option value='10'>10</option>

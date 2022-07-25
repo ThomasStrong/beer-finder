@@ -2,7 +2,7 @@ import Venue from './Venue';
 
 const Venues = ({ venues }) => {
   return (
-    <>
+    <div id='venueList'>
       {venues.map((venue) => (
         <a
           id='venueLink'
@@ -11,10 +11,10 @@ const Venues = ({ venues }) => {
           rel='noopener noreferrer'
           style={{ textDecoration: 'none' }}
         >
-          <Venue key={venue.id} venue={venue} />
+          <Venue venue={venue} />
         </a>
       ))}
-    </>
+    </div>
   );
 };
 
