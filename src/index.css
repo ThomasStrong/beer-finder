@@ -167,14 +167,10 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1980px) {
+@media only screen and (min-width: 1680px) {
   .container {
-    max-width: 1100px;
-    display: block;
+    max-width: 1200px;
     display: flex;
-  }
-
-  #termInput {
-    float: left;
+    flex-wrap: wrap;
   }
 }
