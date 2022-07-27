@@ -2,10 +2,6 @@ import LocateBtn from './LocateBtn';
 import UseLocation from './UseLocation';
 
 const Header = () => {
-  // const onClick = () => {
-  //   console.log('Click');
-  // };
-
   let userPosition;
 
   const geolocate = () => {
@@ -24,8 +20,6 @@ const Header = () => {
     let userLat;
     let userLong;
 
-    // For testing geolocation
-    //
     function showPosition(position) {
       userLat = position.coords.latitude;
       userLong = position.coords.longitude;

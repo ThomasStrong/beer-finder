@@ -8,7 +8,7 @@ const Venue = ({ venue }) => {
       </p>
       <p>{venue.phone}</p>
       <p>{venue.url}</p>
-      {/* <iframe src={venue.proxylink}></iframe>     this is not working correctly*/}
+      {/* <iframe src={venue.proxylink}></iframe> */}
     </div>
   );
 };
