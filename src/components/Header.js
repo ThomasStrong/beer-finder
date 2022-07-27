@@ -32,6 +32,8 @@ const Header = () => {
 
       console.log(userLat, userLong);
     }
+
+    alert('This feature coming soon!');
   };
 
   return (
