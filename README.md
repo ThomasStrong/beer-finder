@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Description -
 
-- FindMeABeer - This app is designed to find someone (a site user) a place to find a nice libation. The single-page app was inspired by the author's interest in local breweries and the communities therein. The user is given the option to search for a location to have or get a beer by city, state, or name. The app is fetching the appropriate data from The Beer Mapping Project's API (http://beermapping.com), displaying relevant information to the user, and then makes each location a clickable button to direct the user to their website. I used a mobile-first approach for the design, React, .
+- FindMeABeer - This app is designed to find someone (a site user) a place to find a nice libation. The single-page app was inspired by the author's interest in local breweries and the communities therein. The user is given the option to search for a location to have or get a beer by city, state, or name. The app is fetching the appropriate data from The Beer Mapping Project's API (http://beermapping.com), displaying relevant information to the user, and then makes each location a clickable button to direct the user to their website. This app employs React and mobile-first design.
   - The original intent for this project was to link a user's Untappd username to their wishlist of beers and then offer them a nearby location to find the beer. As of the completion of this project Untappd was not allowing new access to their API while it is under development.
     <br></br>
 
@@ -38,7 +38,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Future Improvements
 
-- Complete functionality of the UseLocation button/function; set the SearchForm to populate via the information from geolocation, after geocaoding lat/long to city/state and search by: 'city'
+- Complete functionality of the UseLocation button/function; set the SearchForm to populate via the information from geolocation, after geocoding lat/long to city/state and search by: 'city'
 - Allow user to search specifically for type of venue (i.e. brewery, brewpub, etc.)
 - Dynamic placeholder for the search term input box for greater usability (Search by: X; 'X name/term')
 - More to come!
