@@ -18,6 +18,7 @@ body {
   background-color: var(--secondary-bg-color);
   background-attachment: fixed;
   background-position: 50% 70%;
+  /* Image Credit: Timothy Dykes @timonthycdykes, from unsplash.com*/
   background-image: url('./beerground.webp');
 }
 
@@ -146,6 +147,7 @@ footer {
     font-size: 110%;
     background-attachment: fixed;
     background-position: 50% 70%;
+    /* Refer to previous image credit. */
     background-image: url('./beerground.webp');
   }
 
