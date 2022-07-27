@@ -26,12 +26,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX); Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
   - These two were accomplished via `fetch()` to beermapping.com API, parsing the response, and then setting the `topVenues` state using a dynamic variable `displayNumber` as selected by the user.
 - Create and use a function that accepts two or more values (parameters), calculates or determines a new value based on those inputs, and returns a new value
-  - The `SearchForm` accepts multiple data inputs from the user; seearch type, search term(s), number of results to display. The form uses a submit button that `onSubmit` sets and passes the state of term and type (the search type and term(s)) to `getVenueURL` which forms the fetch url from term/type, then uses `slice()` given the user's specified number of results to display to form the displayed list of venues.
+  - The `SearchForm` accepts multiple data inputs from the user; search type, search term(s), number of results to display. The form uses a submit button that `onSubmit` sets and passes the state parameters of term and type (the search type and term(s)) via the object `venue` to `getVenueURL` which forms the fetch url from term/type, then uses `slice()` given the user's specified number of results to form the displayed list of venues.
 - Develop your project using a common JavaScript framework such as React, Angular, Vue, etc.
   - This app was created using React and utilizes the useState hook.
 - Additional features:
 
-  - The package gh-pages was used to deploy the app to GitHub Pages.
+  - The package `gh-pages` was used to deploy the app to GitHub Pages.
+  - Package `@react-google-maps/api` used as a helper for Google Map display.
     <br></br>
 
 ## Future Improvements
