@@ -13,6 +13,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-This method requires using a personal Google API Key for the map to load properly.
 <br></br>
 
 ## Description -
