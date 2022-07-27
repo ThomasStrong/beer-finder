@@ -1,32 +1,49 @@
-Beer-Finder React App
-# Beer-Finder
+Beer-Finder (FindMeABeer) React App
+
+# Beer-Finder (FindMeABeer)
+
 Capstone Project - Code Louisville Web Development 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [Hosted on GitHub Pages](https://thomasstrong.github.io/beer-finder/)
 
-## Available Scripts
+## To run the app in development mode
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br></br>
 
-### `npm test`
+## Description -
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- FindMeABeer - This app is designed to find someone (a site user) a place to find a nice libation. The single-page app was inspired by the author's interest in local breweries and the communities therein. The user is given the option to search for a location to have or get a beer by city, state, or name. The app is fetching the appropriate data from The Beer Mapping Project's API (http://beermapping.com), displaying relevant information to the user, and then makes each location a clickable button to direct the user to their website. I used a mobile-first approach for the design, React, .
+  - The original intent for this project was to link a user's Untappd username to their wishlist of beers and then offer them a nearby location to find the beer. As of the completion of this project Untappd was not allowing new access to their API while it is under development.
+    <br></br>
 
-### `npm run build`
+## JavaScript Features -
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX); Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
+  - These two were accomplished via `fetch()` to beermapping.com API, parsing the response, and then setting the `topVenues` state using a dynamic variable `displayNumber` as selected by the user.
+- Create and use a function that accepts two or more values (parameters), calculates or determines a new value based on those inputs, and returns a new value
+  - The `SearchForm` accepts multiple data inputs from the user; seearch type, search term(s), number of results to display. The form uses a submit button that `onSubmit` sets and passes the state of term and type (the search type and term(s)) to `getVenueURL` which forms the fetch url from term/type, then uses `slice()` given the user's specified number of results to display to form the displayed list of venues.
+- Develop your project using a common JavaScript framework such as React, Angular, Vue, etc.
+  - This app was created using React and utilizes the useState hook.
+- Additional features:
 
-### Deployment
+  - The package gh-pages was used to deploy the app to GitHub Pages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  <br></br>
 
-### `npm run build` fails to minify
+## Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Allow user to search specifically for type of venue (i.e. brewery, brewpub, etc.)
+- Dynamic placeholder for the search term input box for greater usability (Search by: X; 'X name/term')
+- Complete functionality of the UseLocation button/function; set the SearchForm to populate via the information from geolocation, after geocaoding lat/long to city/state and search by: 'city'
+- More to come!
+  <br></br>
+
+## Questions?
+
+If you have any questions or concerns feel free to reach out to me at [Github](https://github.com/ThomasStrong) or through email at <strng_thms@yahoo.com>.
+<br></br>
