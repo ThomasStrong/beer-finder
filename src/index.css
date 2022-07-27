@@ -18,7 +18,7 @@ body {
   background-color: var(--secondary-bg-color);
   background-attachment: fixed;
   background-position: 50% 70%;
-  background-image: url('./timothy-dykes-Lq1rOaigDoY-unsplash.jpg');
+  background-image: url('./beerground.webp');
 }
 
 .container {
@@ -146,7 +146,7 @@ footer {
     font-size: 110%;
     background-attachment: fixed;
     background-position: 50% 70%;
-    background-image: url('./timothy-dykes-Lq1rOaigDoY-unsplash.jpg');
+    background-image: url('./beerground.webp');
   }
 
   .container {
