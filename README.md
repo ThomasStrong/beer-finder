@@ -36,9 +36,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Future Improvements
 
+- Complete functionality of the UseLocation button/function; set the SearchForm to populate via the information from geolocation, after geocaoding lat/long to city/state and search by: 'city'
 - Allow user to search specifically for type of venue (i.e. brewery, brewpub, etc.)
 - Dynamic placeholder for the search term input box for greater usability (Search by: X; 'X name/term')
-- Complete functionality of the UseLocation button/function; set the SearchForm to populate via the information from geolocation, after geocaoding lat/long to city/state and search by: 'city'
 - More to come!
   <br></br>
 
