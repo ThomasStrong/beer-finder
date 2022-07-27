@@ -5,6 +5,7 @@ const containerStyle = {
   height: '300px',
 };
 
+// Current center based on Louisville, KY
 const center = {
   lat: 38.2527,
   lng: -85.7585,

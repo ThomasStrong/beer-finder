@@ -7,21 +7,6 @@ const SearchForm = ({ onSearch }) => {
   const onSubmit = (e) => {
     e.preventDefault();
 
-    // Throw error for missing search term, and clear it - this is not working
-    // const errorResponse = document.getElementById('map');
-    // const para = document.createElement('p');
-    // if (!term) {
-    //   const errorThrow = () => {
-    //     para.innerHTML = 'Unkown location!';
-    //     errorResponse.appendChild(para);
-    //     para.style.color = 'red';
-    //     para.style.fontSize = '125%';
-    //   };
-    //   errorThrow();
-    // } else {
-    //   para.remove();
-    // }
-
     const node = document.createElement('p');
     const noTerm = document.createTextNode('Please enter a search term!');
 
