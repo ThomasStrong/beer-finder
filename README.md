@@ -32,8 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 - Additional features:
 
   - The package gh-pages was used to deploy the app to GitHub Pages.
-
-  <br></br>
+    <br></br>
 
 ## Future Improvements
 
