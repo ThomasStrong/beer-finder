@@ -43,8 +43,9 @@ In the project directory, you can run:
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 <br></br>
--This method requires using a personal Google API Key for the map to load properly.
-<br></br>
+
+- This method requires using a personal **Google API Key** for the map to load properly.
+  <br></br>
 
 ## JavaScript Features
 
@@ -92,4 +93,4 @@ If you have any questions or concerns feel free to reach out to me at [Github](h
 
 ## Contributions
 
-Contributions are welcome. Next steps and app direction are found in 'Future Development'.
+Contributions are welcome. Next steps and app direction are found in **'Future Development'**.
