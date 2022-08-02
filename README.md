@@ -1,29 +1,54 @@
-Beer-Finder (FindMeABeer) React App
+# FindMeABeer (beer-finder) <img align="center" src="public\favicon.ico" alt="beer icon">
 
-# Beer-Finder (FindMeABeer)
+## Description
 
 Capstone Project - Code Louisville Web Development 2
 
 ### [Hosted on GitHub Pages](https://thomasstrong.github.io/beer-finder/)
 
-## To run the app in development mode
+## Table of Contents
+
+- [Overview](#overview)
+- [Visual Example and Deployed Appication](#visual-example)
+- [Instructions](#instructions)
+- [JavaScript Features](#javascript-features)
+- [Technologies](#technologies)
+- [Future Development](#future-development)
+- [Questions](#questions)
+- [Contributions](#contributions)
+
+## Overview
+
+FindMeABeer - This app is designed to find someone (a site user) a place to find a nice libation. The single-page app was inspired by the author's interest in local breweries and the communities therein. The user is given the option to search for a location to have or get a beer by city, state, or name. The app is fetching the appropriate data from The Beer Mapping Project's API ([http://beermapping.com](http://beermapping.com)), displaying relevant information to the user, and then makes each location a clickable button to direct the user to their website. This app employs React and mobile-first design.
+
+- The original intent for this project was to link a user's Untappd username to their wishlist of beers and then offer them a nearby location to find the beer. As of the completion of this project Untappd was not allowing new access to their API while it is under development.
+  <br></br>
+
+## Visual Example
+
+- Mobile
+  <img align="center" src="img\monolithlandingss_mobile.png">
+- Desktop
+  <img align="center" src="img\monolithlandingss_dtop.png">
+
+Live URL: https://thomasstrong.github.io/beer-finder/
+
+## Instructions
+
+The app is hosted at [GitHub Pages](https://thomasstrong.github.io/beer-finder/) or, will need to be run locally in development mode.
+
+### To run the app in development mode
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 <br></br>
 -This method requires using a personal Google API Key for the map to load properly.
 <br></br>
 
-## Description -
-
-- FindMeABeer - This app is designed to find someone (a site user) a place to find a nice libation. The single-page app was inspired by the author's interest in local breweries and the communities therein. The user is given the option to search for a location to have or get a beer by city, state, or name. The app is fetching the appropriate data from The Beer Mapping Project's API (http://beermapping.com), displaying relevant information to the user, and then makes each location a clickable button to direct the user to their website. This app employs React and mobile-first design.
-  - The original intent for this project was to link a user's Untappd username to their wishlist of beers and then offer them a nearby location to find the beer. As of the completion of this project Untappd was not allowing new access to their API while it is under development.
-    <br></br>
-
-## JavaScript Features -
+## JavaScript Features
 
 - Retrieve data from an external API and display data in your app (such as with fetch() or with AJAX); Read and parse an external file (such as JSON or CSV) into your application and display some data from that in your app
   - These two were accomplished via `fetch()` to beermapping.com API, parsing the response, and then setting the `topVenues` state using a dynamic variable `displayNumber` as selected by the user.
@@ -37,7 +62,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
   - Package `@react-google-maps/api` used as a helper for Google Map display.
     <br></br>
 
-## Future Improvements
+## Technologies
+
+- JavaScript
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="5%" />
+- CSS
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="5%" />
+- HTML
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="5%" />
+- ReactJS
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="HTML" width="5%" />
+- NodeJS
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="HTML" width="5%" />
+- GitHub
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="HTML" width="5%" />
+- Google
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="HTML" width="5%" />
+
+## Future Development
 
 - Complete functionality of the UseLocation button/function; set the SearchForm to populate via the information from geolocation, after geocoding lat/long to city/state and search by: 'city'
 - Allow user to search specifically for type of venue (i.e. brewery, brewpub, etc.)
@@ -49,3 +91,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 If you have any questions or concerns feel free to reach out to me at [Github](https://github.com/ThomasStrong) or through email at <strng_thms@yahoo.com>.
 <br></br>
+
+## Contributions
