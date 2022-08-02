@@ -4,8 +4,6 @@
 
 Capstone Project - Code Louisville Web Development 2
 
-### [Hosted on GitHub Pages](https://thomasstrong.github.io/beer-finder/)
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -93,3 +91,5 @@ If you have any questions or concerns feel free to reach out to me at [Github](h
 <br></br>
 
 ## Contributions
+
+Contributions are welcome. Next steps and app direction are found in 'Future Development'.
