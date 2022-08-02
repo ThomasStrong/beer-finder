@@ -27,9 +27,9 @@ FindMeABeer - This app is designed to find someone (a site user) a place to find
 ## Visual Example
 
 - Mobile
-  <img align="center" src="img\monolithlandingss_mobile.png">
+  <img align="center" src="public\findmeabeerss_mobile.png">
 - Desktop
-  <img align="center" src="img\monolithlandingss_dtop.png">
+  <img align="center" src="public\findmeabeerss_dtop.png">
 
 Live URL: https://thomasstrong.github.io/beer-finder/
 
