@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import LocateBtn from './LocateBtn';
 
 const SearchForm = ({ onSearch }) => {
   const [type, setType] = useState('city');
@@ -20,8 +21,39 @@ const SearchForm = ({ onSearch }) => {
     setType('city');
   };
 
+  let userPosition;
+
+  const geolocate = () => {
+    function getLocation() {
+      const response = document.getElementById('buttonResponse');
+      if (navigator.geolocation) {
+        userPosition = navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        response.innerHTML =
+          'Geolocation is not supported and we will be unable to locate beer near your location!';
+      }
+    }
+
+    getLocation();
+
+    // Convert (reverse geocode; google?) lat/long to city then set state of term to that city
+
+    let userLat;
+    let userLong;
+
+    function showPosition(position) {
+      userLat = position.coords.latitude;
+      userLong = position.coords.longitude;
+
+      console.log(userLat, userLong);
+    }
+
+    alert('This feature coming soon!');
+  };
+
   return (
     <form id='termInput' onSubmit={onSubmit}>
+      <LocateBtn onClick={geolocate} />
       <label id='termInputLabel' htmlFor='searchType'>
         Search for a location
       </label>

@@ -6,7 +6,7 @@ const containerStyle = {
 };
 
 // Current center based on Louisville, KY
-const center = {
+const testCenter = {
   lat: 38.2527,
   lng: -85.7585,
 };
@@ -14,8 +14,12 @@ const center = {
 function UseLocation() {
   return (
     <LoadScript googleMapsApiKey='AIzaSyC991AHKUTrVnFqaVAFcox4BMl8dI0fjzA'>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
-        <Marker position={center} />
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={testCenter}
+        zoom={10}
+      >
+        <Marker position={testCenter} />
       </GoogleMap>
     </LoadScript>
   );
