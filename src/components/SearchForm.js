@@ -37,6 +37,8 @@ const SearchForm = ({ onSearch }) => {
     getLocation();
 
     // Convert (reverse geocode; google?) lat/long to city then set state of term to that city
+    // Will this populate the input boxes?  if not, then .innerhtml the values
+    // https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&key=YOUR_API_KEY
 
     let userLat;
     let userLong;
